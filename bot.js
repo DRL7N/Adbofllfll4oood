@@ -53,12 +53,12 @@ client.on("message", async message => {
     if (message.content == PREFIX + 'join') {
     if ( message.channel.id !== CHANNELID) return; 
     if (!OWNERS.includes(message.author.id)) return;
-       fetch('http://localhost/w/joi.php?token='+TOKENUSER+'&invite='+INVITE,{ method: 'POST'});
+       fetch('http://localhost/w/joi.php?token='+process.env.TOKENUSER+'&invite='+INVITE,{ method: 'POST'});
        message.channel.send(`**دخل الآن**`).then(msg => msg.delete(10000));
     } else if (message.content == PREFIX + 'Leave') {
            if (message.channel.id !== CHANNELID) return;
            if (!OWNERS.includes(message.author.id)) return;
-       fetch('http://localhost/w/lev.php?token='+TOKENUSER+'&guilds='+GUILD, { method: 'POST'});
+       fetch('http://localhost/w/lev.php?token='+process.env.TOKENUSER+'&guilds='+GUILD, { method: 'POST'});
        message.channel.send(`**طلع الآن**`).then(msg => msg.delete(10000));
     }
 });
