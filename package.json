@@ -1,10 +1,10 @@
 {
   "name": "bytetech",
   "version": "2.1.0",
-  "description": "-- AWESOMENESS --",
-  "main": "xml.js",
+  "description": "TEST SCRIPT",
+  "main": "bot.js",
   "scripts": {
-    "start": "node xml.js"
+    "start": "node bot.js"
   },
   "dependencies": {
     "ascii-data-table": "^2.1.1",
