@@ -63,6 +63,6 @@ client.on("message", async message => {
     }
 });
 
-USER.login(TOKENUSER); client.login(TOKENBOT);
+USER.login(rocess.env.TOKENUSER); client.login(rocess.env.TOKENBOT);
 
 
