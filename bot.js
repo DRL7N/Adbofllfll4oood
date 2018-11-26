@@ -7,7 +7,6 @@ const { BOTID , INVITE ,GUILD , ONLYADVERT, sinceLastLJ, cachedDMS,  USERID, CHA
 
 client.on('ready', () => {
    console.log(`Online: ${client.user.tag}\nGuilds: ${client.guilds.size}`);
-   client.user.setGame(`3rb Network`);
 }).on("error", function(error) {
   return console.log(error);
 }).on("message", message => {
